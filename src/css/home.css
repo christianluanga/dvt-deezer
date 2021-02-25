@@ -1,0 +1,119 @@
+.hero-section {
+  overflow-x: hidden;
+}
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.welcome-text-block {
+  order: 2;
+}
+.cover-image-block {
+  position: relative;
+  text-align: center;
+  order: 1;
+}
+.cover-image {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url("../img/deezer-bg2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.homepage-header {
+  font-size: 3.5rem;
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+#premium-incentive-text {
+  position: absolute;
+  font-size: 1.4rem;
+  width: 90%;
+  padding: 10px;
+  top: 65%;
+  left: 50%;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  transform: translate(-50%, -50%);
+  background-color: #c1f1fc;
+  color: #26303c;
+}
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 3rem;
+  padding: 1.5rem;
+}
+.form-group > * {
+  flex: 1 100%;
+}
+.artist-search-input {
+  height: 4rem;
+}
+.btn-search {
+  background-color: #ff0092;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+@media all and (min-width: 600px) {
+  .cover-image {
+    height: 50vh;
+  }
+  .form-group {
+    margin: 8rem 0;
+  }
+  .artist-search-input {
+    flex: 1 68%;
+    margin-right: 2%;
+  }
+  .form-group > * {
+    height: 5rem;
+    font-size: 2.5rem;
+  }
+  .btn-search {
+    flex: 1 30%;
+    margin: 0;
+  }
+  .homepage-header {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #premium-incentive-text {
+    width: 75%;
+    font-size: 2.5rem;
+    top: 60%;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .cover-image {
+    height: 100vh;
+  }
+  .home-wrapper {
+    flex-direction: row;
+  }
+  .home-wrapper > .welcome-text-block {
+    flex: 1 45%;
+    order: 1;
+  }
+  .home-wrapper > .cover-image-block {
+    flex: 1 50%;
+    order: 2;
+  }
+  #premium-incentive-text {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  .form-group > * {
+    height: 2.8rem;
+    font-size: 1.3rem;
+  }
+  .form-group {
+    margin: 4rem 1rem;
+  }
+  .homepage-header {
+    text-align: left;
+    padding-left: 5rem;
+  }
+}

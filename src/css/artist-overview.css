@@ -1,0 +1,10 @@
+.artist-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media all and (min-width: 600px){
+    
+  }

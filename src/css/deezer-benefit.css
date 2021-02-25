@@ -1,0 +1,75 @@
+.why-deezer-container {
+  padding-bottom: 5rem;
+  background-color: #f9f4f4;
+  margin-top: 0.1rem;
+  overflow: hidden;
+}
+.why-deezer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.why-deezer-benefit {
+  margin: 0 3rem;
+}
+.why-deezer-benefit p {
+  font-size: 15pt;
+}
+.benefit-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.benefit-wrapper > div {
+  padding-top: 1rem;
+}
+.benefit-wrapper > * {
+  flex: 1 100%;
+}
+.phone-img {
+  width: 40%;
+  height: 30%;
+  max-width: 100%;
+  display: none;
+}
+.benefit-heading {
+  margin: 1rem 0;
+}
+.benefit-header {
+  color: #ff0000;
+}
+@media all and (min-width: 600px) {
+  .benefit-wrapper > * {
+    flex: 1 45%;
+    margin: 0 2.5%;
+  }
+  .why-deezer-benefit p {
+    font-size: 2.3rem;
+  }
+  .benefit-header {
+    font-size: 2.4rem;
+  }
+  .benefit-heading {
+    margin: 2rem 2.5%;
+  }
+}
+@media all and (min-width: 800px) {
+  .phone-img {
+    display: inline-block;
+  }
+  .why-deezer-wrapper{
+    flex-wrap: nowrap;
+  }
+  .why-deezer-wrapper > .phone-img{
+    flex: 1 40%;
+  }
+  .why-deezer-wrapper > .benefit-wrapper{
+    flex: 1 60%;
+  }
+  .benefit-header {
+    font-size: 2rem;
+  }
+
+  .why-deezer-benefit p{
+    font-size: 1rem;
+    padding-top: .5rem;
+  }
+}

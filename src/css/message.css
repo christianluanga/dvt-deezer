@@ -1,0 +1,21 @@
+.message-container  {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+
+}    
+.message-container > div {
+    margin: auto;
+} 
+.message-container h1{
+    margin: 0 1rem;
+}
+.message-container a {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color:#00c7f2;
+} 
+.error {
+    color: #ff0000;
+}
+
