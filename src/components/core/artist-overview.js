@@ -21,7 +21,6 @@ const ArtistOverview = ({id}) => {
       } catch (error) {
         setLoaded(true)
         setError(true)
-        console.error(error)
       }
     }
     handleArtistSearch()
